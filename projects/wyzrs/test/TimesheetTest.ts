@@ -1,7 +1,8 @@
 import { ethers } from "hardhat";
 import { BaseContract, ContractTransactionResponse, Contract } from "ethers";
-import { TimesheetContract } from "../typechain-types/TimesheetContract";
+
 import { expect } from "chai";
+import { TimesheetContract } from "../typechain-types";
 
 describe("TimesheetContract", function () {
   let timesheetContract: TimesheetContract;
@@ -9,7 +10,7 @@ describe("TimesheetContract", function () {
   beforeEach(async () => {
     // Compile and deploy the contract
     const ContractFactory = await ethers.getContractFactory("TimesheetContract");
-    timesheetContract = (await ContractFactory.deploy()) as TimesheetContract;
+    timesheetContract = await ContractFactory.deploy();
     await timesheetContract.waitForDeployment();
   });
 

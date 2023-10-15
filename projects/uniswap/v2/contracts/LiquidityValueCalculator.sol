@@ -4,7 +4,6 @@ pragma solidity ^0.8.6;
 
 import './interfaces/ILiquidityValueCalculator.sol';
 
-import './interfaces/ILiquidityValueCalculator.sol';
 import '@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol';
 import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
 
