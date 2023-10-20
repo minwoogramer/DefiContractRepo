@@ -8,7 +8,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.17",
+        version: "0.8.9",
         settings: {
           optimizer: {
             enabled: true,
@@ -51,17 +51,17 @@ const config: HardhatUserConfig = {
       allowUnlimitedContractSize: true,
     },
     avalanche_wyzrs_subnet: {
-      url: "https://subnets.avacloud.io/ffabc0b4-fcf7-4ec8-a49e-d7039c894eac",
-      chainId: 155394,
+      url: "https://subnets.avacloud.io/aaa4eb41-36a4-47f0-b63c-2f84fe136756",
+      chainId: 1110867,
       accounts: [ACCOUNT_PRIVATE_KEY],
       gasPrice: "auto",
     },
-    saga_wyzrs_chainlet: {
-      url: "http://wyzrstask-1694418111538339-1.jsonrpc.sp1.sagarpc.io/",
-      chainId: 1694418111538339,
-      accounts: [ACCOUNT_PRIVATE_KEY],
-      gasPrice: "auto",
-    },
+    // saga_wyzrs_chainlet: {
+    //   url: "http://wyzrstask-1694418111538339-1.jsonrpc.sp1.sagarpc.io/",
+    //   chainId: 1694418111538339,
+    //   accounts: [ACCOUNT_PRIVATE_KEY],
+    //   gasPrice: "auto",
+    // },
   },
 };
 
